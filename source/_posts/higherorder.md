@@ -16,7 +16,9 @@ categories: javascript
 
 ```
 function a(b) {}
-a(function (params) {});
+a(function (params) {
+
+});
 ```
 
 - 一个函数返回另一个函数
@@ -24,7 +26,7 @@ a(function (params) {});
 ```
 function a() {
   return function (params) {};
-  }
+}
 ```
 
 ##### 2.应用场景
@@ -40,7 +42,7 @@ function a() {
 
 ```
 var num=new Number(1);
-    console.log(typeof num);//object
+console.log(typeof num);//object
 ```
 
 2.instanceof 不仅检测它作用的对象的构造函数，还是检测该对象的原型链的构造函数，只要有一个符合，就会返回 true
@@ -48,9 +50,9 @@ var num=new Number(1);
 
 ```
 var arr = new Array();
-    var obj = new Object();
-    console.log( arr instanceof Object);//true
-    console.log( arr instanceof Array);//true
+var obj = new Object();
+console.log( arr instanceof Object);//true
+console.log( arr instanceof Array);//true
 ```
 
 - constructor
@@ -121,17 +123,17 @@ async function getdata2(){
 //请求完毕，做接下来的事情
 function fn(arr){
    console.log(arr)
- }
- function after(cb,times){
-   let arr = []
-   return function(data){
-     arr.push(data)
-     if(--times ===0){
-       cb(arr)
-     }
-   }
 }
-let out  = after(fn,2)
+function after(cb,times){
+  let arr = []
+  return function(data){
+    arr.push(data)
+    if(--times ===0){
+      cb(arr)
+    }
+  }
+}
+let out = after(fn,2)
 ```
 
 思考，可以看到高阶函数频繁的使用了闭包
@@ -142,7 +144,7 @@ function test() {
    //c的当前作用域在这里
    let c = function () {};
    return c;
- }
+}
 ```
 
 test 函数中创建了一个 c 函数，c 函数的作用域在 test 中
