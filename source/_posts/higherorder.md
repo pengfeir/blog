@@ -46,7 +46,7 @@ console.log(typeof num);//object
 ```
 
 2.instanceof 不仅检测它作用的对象的构造函数，还是检测该对象的原型链的构造函数，只要有一个符合，就会返回 true
-比如
+比如:
 
 ```
 var arr = new Array();
@@ -56,8 +56,8 @@ console.log( arr instanceof Array);//true
 ```
 
 - constructor
-  //原型被覆盖或者继承,constructor 会丢失
-  综上，我们暂时用 Object.prototype.toString.call()来判断数据类型
+//原型被覆盖或者继承,constructor 会丢失
+综上，我们暂时用 Object.prototype.toString.call()来判断数据类型
 
 ```
 let typeUtil = {}
@@ -108,7 +108,7 @@ fn("参数1", "参数2");
 
 ###### 4.并发
 
-应用场景，接口发送了 2 个请求，这五个请求都结束的时候，需拿到数据并告知做下一步的操作
+应用场景，接口发送了 2 个请求，这2个请求都结束的时候，需拿到数据并告知做下一步的操作
 
 ```
 let getdata = axios.get(url)
