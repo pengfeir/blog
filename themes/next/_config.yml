@@ -234,7 +234,7 @@ read_more_btn: true
 post_meta:
   item_text: true
   created_at: true
-  updated_at:
+  updated_at: 
     enable: true
     another_day: true
   categories: true
@@ -474,7 +474,7 @@ yandex_site_verification:
 baidu_site_verification:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true
 
 # ---------------------------------------------------------------
 # Third Party Plugins & Services Settings
@@ -661,8 +661,8 @@ add_this_id:
 # ---------------------------------------------------------------
 
 # Google Analytics
-google_analytics:
-  tracking_id: # <app_id>
+google_analytics: 
+  tracking_id: UA-171514437-1
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false

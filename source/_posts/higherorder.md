@@ -1,8 +1,8 @@
 ---
 title: 聊聊js中的高阶函数
 date: 2020-06-30 15:13:07
-description:
-tags:
+description: 高阶函数
+tags: javascript
 categories: javascript
 ---
 
@@ -16,8 +16,7 @@ categories: javascript
 
 ```
 function a(b) {}
-a(function (params) {
-
+  a(function (params) {
 });
 ```
 
