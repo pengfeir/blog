@@ -1,9 +1,11 @@
 ---
+
 title: husky
 date: 2020-09-03 15:39:49
 description: lint-staged,prettier,eslint,husky,commitizen
-tags: git,,prettier,husky
+tags: git,prettier,husky
 categories: git,prettier,husky
+
 ---
 
 #### 记录一波 husky 配置提交代码校验的过程
